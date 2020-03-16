@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roll Dogs</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    check
+    <h1> Roll </h1>
+    <div id="container">
+        <div id="quantityDiv">
+            <p style="display: inline;">Quantity</p>
+            <input id="quantity" type="number" min="0" maxlength="4" size="4">
+        </div><br>
+        <div id="diceDiv">
+            <p style="display: inline;">Die</p>
+            <select id="dice" name="dice">
+                <option selected hidden disabled>Select Die</option>
+                <option value="d4">d4</option>
+                <option value="d6">d6</option>
+                <option value="d8">d8</option>
+                <option value="d10">d10</option>
+                <option value="d12">d12</option>
+                <option value="d20">d20</option>
+                <option value="d100">d100</option>
+            </select>
+        </div><br>
+        <div id="modDiv">
+            <p style="display: inline;">Modifier</p>
+            <input id="mod" type="number" maxlength="4" size="4">
+        </div>
+        <div id="rollButton">
+            <button type="submit" id="ROLL">ROLL</button>
+        </div>
+    </div>
     <script src="roll.js"></script>
 </body>
+
 </html>
