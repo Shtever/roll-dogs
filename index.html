@@ -12,30 +12,31 @@
 <body>
     <h1> Roll </h1>
     <div id="container">
-        <div id="quantityDiv">
+        <div class="field" id="quantityDiv">
             <p style="display: inline;">Quantity</p>
-            <input id="quantity" type="number" min="0" maxlength="4" size="4">
+            <input class="inputs" id="quantity" type="number" min="0" maxlength="4" size="4">
         </div><br>
-        <div id="diceDiv">
+        <div class="field" id="diceDiv">
             <p style="display: inline;">Die</p>
-            <select id="dice" name="dice">
+            <select class="inputs" id="dice" name="dice">
                 <option selected hidden disabled>Select Die</option>
-                <option value="d4">d4</option>
-                <option value="d6">d6</option>
-                <option value="d8">d8</option>
-                <option value="d10">d10</option>
-                <option value="d12">d12</option>
-                <option value="d20">d20</option>
-                <option value="d100">d100</option>
+                <option value="4">d4</option>
+                <option value="6">d6</option>
+                <option value="8">d8</option>
+                <option value="10">d10</option>
+                <option value="12">d12</option>
+                <option value="20">d20</option>
+                <option value="100">d100</option>
             </select>
         </div><br>
-        <div id="modDiv">
+        <div class="field" id="modDiv">
             <p style="display: inline;">Modifier</p>
-            <input id="mod" type="number" maxlength="4" size="4">
+            <input class="inputs" id="mod" type="number" maxlength="4" size="4">
         </div>
         <div id="rollButton">
-            <button type="submit" id="ROLL">ROLL</button>
+            <button onclick="rollEm(dice, mod)" type="submit" id="ROLL">ROLL</button>
         </div>
+        <div id="result"></div>
     </div>
     <script src="roll.js"></script>
 </body>

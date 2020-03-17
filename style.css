@@ -9,16 +9,21 @@ html {
     margin: 0 auto;
 }
 
-#quantityDiv, #diceDiv, #modDiv {
+.field {
+    box-sizing: border-box;
     width: 100%;
     display: block;
     margin: 0 auto;
     text-align: left;
-    /* display: inline; */
     float: right;
 }
 
-#dice, #quantity, #mod {
+.inputs {
     float: right;
     width: 50%;
+}
+
+#dice{
+    float: right;
+    width: 53%;
 }
