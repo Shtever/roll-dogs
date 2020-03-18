@@ -16,6 +16,11 @@ html {
     margin: 0 auto;
     text-align: left;
     float: right;
+    margin-bottom: 2%;
+}
+
+#modDiv {
+    margin-bottom: 5%;
 }
 
 .inputs {
@@ -23,7 +28,15 @@ html {
     width: 50%;
 }
 
-#dice{
+#dice {
     float: right;
     width: 53%;
+}
+
+#rollButton {
+    margin-bottom: 4%;
+}
+
+#result {
+    margin-bottom: 5%;
 }
