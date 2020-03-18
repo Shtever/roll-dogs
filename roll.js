@@ -8,22 +8,24 @@ function rollEm() {
     } else if (isNaN(quant) || isNaN(dice)) {
         alert("Fill out all fields");
     } else {
-        document.getElementById("result").innerHTML= "";
-        document.getElementById("rolling").innerHTML= "";
-        document.getElementById("diceRolls").innerHTML= "";
+        document.getElementById("result").innerHTML = "";
+        document.getElementById("rolling").innerHTML = "";
+        document.getElementById("diceRolls").innerHTML = "";
         var rollTotal = 0
         document.getElementById("rolling").append("Rolling " + quant + " d" + dice + " + " + mod);
-        document.getElementById("result").innerHTML= "<hr>"
+        document.getElementById("result").innerHTML = "<hr>"
         for (var i = 0; i < quant; i++) {
             var rollRaw = Math.floor((Math.random()) * dice) + 1;
-            document.getElementById("diceRolls").append(" *" + rollRaw + "* ");
+            document.getElementById("diceRolls").append(" -" + rollRaw + "- ");
+            document.createElement("br");
             console.log("Die " + (i + 1) + ":" + rollRaw);
-            rollTotal = rollTotal + rollRaw
+            rollTotal = rollTotal + rollRaw;
         };
+        console.clear();
         console.log("TOTAL: " + rollTotal);
         console.log("quant " + quant);
         console.log("dice " + dice);
         console.log("mod " + mod);
-        document.getElementById("result").append("TOTAL: " + rollTotal);
+        document.getElementById("result").append("TOTAL: " + parseInt(rollTotal + mod));
     }
 }

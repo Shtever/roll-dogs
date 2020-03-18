@@ -1,5 +1,5 @@
 # roll-dogs <hr>
-### A basic dice roller for tabletop games.<hr>
+### A basic dice roller for tabletop games. Built without JQuery<hr>
 #### Currently the standard dice are functional:
  - d4
  - d6
