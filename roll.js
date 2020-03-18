@@ -1,3 +1,5 @@
+var historyVar = 1
+
 function rollEm() {
     var quant = parseInt(document.getElementById("quantity").value);
     var dice = parseInt(document.getElementById("dice").value);
@@ -17,15 +19,18 @@ function rollEm() {
         for (var i = 0; i < quant; i++) {
             var rollRaw = Math.floor((Math.random()) * dice) + 1;
             document.getElementById("diceRolls").append(" -" + rollRaw + "- ");
-            document.createElement("br");
+            // document.createElement("br");
             console.log("Die " + (i + 1) + ":" + rollRaw);
             rollTotal = rollTotal + rollRaw;
-        };
+        }
+
         console.clear();
         console.log("TOTAL: " + rollTotal);
         console.log("quant " + quant);
         console.log("dice " + dice);
         console.log("mod " + mod);
         document.getElementById("result").append("TOTAL: " + parseInt(rollTotal + mod));
+        document.getElementById("history").prepend("Roll-" + historyVar + ":" + parseInt(rollTotal + mod));
+        historyVar++
     }
 }

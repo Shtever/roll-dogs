@@ -40,3 +40,8 @@ html {
 #result {
     margin-bottom: 5%;
 }
+
+#diceRolls, #history {
+    width: min-content;
+    margin: 0 auto;
+}
