@@ -29,6 +29,7 @@ function rollEm() {
         console.log("dice " + dice);
         console.log("mod " + mod);
         document.getElementById("result").append("TOTAL: " + parseInt(rollTotal + mod));
+        document.getElementById("historyTitle").innerHTML="<hr><strong><u>Roll History:</u></strong>";
         document.getElementById("history").prepend("Roll#" + historyVar + ":" + parseInt(rollTotal + mod) + "\n");
         historyVar++
     }
