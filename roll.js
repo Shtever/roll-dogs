@@ -23,14 +23,13 @@ function rollEm() {
             console.log("Die " + (i + 1) + ":" + rollRaw);
             rollTotal = rollTotal + rollRaw;
         }
-
         console.clear();
         console.log("TOTAL: " + rollTotal);
         console.log("quant " + quant);
         console.log("dice " + dice);
         console.log("mod " + mod);
         document.getElementById("result").append("TOTAL: " + parseInt(rollTotal + mod));
-        document.getElementById("history").prepend("Roll-" + historyVar + ":" + parseInt(rollTotal + mod));
+        document.getElementById("history").prepend("Roll#" + historyVar + ":" + parseInt(rollTotal + mod) + "\n");
         historyVar++
     }
 }
