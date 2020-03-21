@@ -1,5 +1,9 @@
 html {
     background-color: bisque;
+    background-image: url(assets/Wade.png);
+    background-position-x: 90%;
+    background-position-y: 3vw;
+    background-repeat: no-repeat;
 }
 
 #container {
