@@ -18,6 +18,12 @@ h1 {
     color: darkblue;
 }
 
+p {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 900;
+    font-size: 1vw;
+}
+
 h3 {
     margin: 0;
     font-family: 'Indie Flower', cursive;
