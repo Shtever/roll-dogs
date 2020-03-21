@@ -5,6 +5,13 @@ html {
     background-position-y: 3vw;
     background-repeat: no-repeat;
 }
+h1 {
+    margin-bottom: 0;
+}
+
+h3 {
+    margin-top: 0;
+}
 
 #container {
     text-align: center;
