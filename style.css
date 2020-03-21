@@ -1,16 +1,34 @@
+/* font-family: 'Permanent Marker', cursive;
+font-family: 'Indie Flower', cursive; */
+
 html {
     background-color: bisque;
     background-image: url(assets/Wade.png);
     background-position-x: 90%;
     background-position-y: 3vw;
     background-repeat: no-repeat;
+    margin: 0 auto;
 }
+
+
 h1 {
-    margin-bottom: 0;
+    margin: 0;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5vw;
+    color: darkblue;
 }
 
 h3 {
-    margin-top: 0;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2vw;
+    margin-top: -2%;
+
+}
+
+#titles{
+    width: 50%;
+    margin: 0 auto;
 }
 
 #container {
@@ -37,6 +55,7 @@ h3 {
 .inputs {
     float: right;
     width: 50%;
+    background-color: lightblue;
 }
 
 #dice {
