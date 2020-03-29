@@ -8,7 +8,7 @@ function rollEm() {
     if ((document.getElementById("dice").value) === "other") {
         console.log("other")
     } else if (isNaN(quant) || isNaN(dice)) {
-        alert("Fill out all fields");
+        alert("Fill out Quantity & Dice fields");
     } else {
         document.getElementById("result").innerHTML = "";
         document.getElementById("rolling").innerHTML = "";
