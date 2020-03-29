@@ -14,11 +14,12 @@ function rollEm() {
         document.getElementById("rolling").innerHTML = "";
         document.getElementById("diceRolls").innerHTML = "";
         var rollTotal = 0
-        document.getElementById("rolling").append("Rolling " + quant + " d" + dice + " + " + mod);
+        document.getElementById("rolling").append("Rolling " + quant + " d" + dice + " + [" + mod + "]");
         document.getElementById("result").innerHTML = "<hr>"
         for (var i = 0; i < quant; i++) {
             var rollRaw = Math.floor((Math.random()) * dice) + 1;
-            document.getElementById("diceRolls").append(" -" + rollRaw + "- ");
+            document.getElementById("diceRolls").append("-" + rollRaw + "- " + "\n");
+            document.getElementById("diceRolls").append("\n");
             // document.createElement("br");
             console.log("Die " + (i + 1) + ":" + rollRaw);
             rollTotal = rollTotal + rollRaw;

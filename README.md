@@ -1,6 +1,6 @@
 # roll-dogs <hr>
 ### A basic dice roller for tabletop games. Built with pure Javascript<hr>
-#### Added BG image of our current DM. Telling everyone his grandmother learned JS during quarantine.
+#### Added BG image of my brother.
 #### Currently the standard dice are functional:
  - d4
  - d6
