@@ -2,6 +2,7 @@
 font-family: 'Indie Flower', cursive; */
 
 html {
+    height:100%;
     background-color: bisque;
     background-image: url(assets/Mickey.png);
     background-size: auto;
@@ -10,6 +11,8 @@ html {
     background-repeat: no-repeat;
     margin: 0 auto;
 }
+
+
 
 button {
     font-family: 'Permanent Marker', cursive;
@@ -65,6 +68,8 @@ h4 {
     float: right;
     width: 50%;
     background-color: lightblue;
+    font-size: 1vw;
+
 }
 
 #dice {
