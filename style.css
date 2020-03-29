@@ -86,7 +86,7 @@ h4 {
 }
 
 #diceRolls, #history {
-    /* width: min-content; */
+    width: min-content;
     margin: 0 auto;
 }
 
