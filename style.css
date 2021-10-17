@@ -4,9 +4,8 @@ font-family: 'Indie Flower', cursive; */
 html {
     height:100%;
     background-color: bisque;
-    background-image: url(assets/Mickey.png);
-    background-size: auto;
-    background-position-x: -10%;
+    background-image: url(assets/Phone.png);
+    background-size: auto 100%;
     /* background-position-y: 3vw; */
     background-repeat: no-repeat;
     margin: 0 auto;
