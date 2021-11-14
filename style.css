@@ -87,6 +87,9 @@ h4 {
 #diceRolls, #history {
     width: min-content;
     margin: 0 auto;
+    background-color: rgba(255,255,255,.8);
+    padding: 10px;
+    border-radius: 20px;
 }
 
 p {
@@ -135,9 +138,7 @@ p {
         line-height: .8;
         margin-bottom: 3%;
     }
-    h4 {
-        display: none;
-    }
+
     #container {
         width: 80%;
     }
@@ -212,3 +213,27 @@ p {
         width: min-content;
     }
 }
+
+.why {
+    position: absolute;
+    margin: 5vw 0 0 2vw;
+    background-color: white;
+    /* border: black;
+    border-style: solid;
+    border-width: 2px; */
+    border-radius: 25px;
+    padding: 2%;
+}
+
+.why-point:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #fff;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    left: 32px;
+    bottom: -24px;
+  }
