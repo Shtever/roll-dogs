@@ -87,7 +87,7 @@ h4 {
 #diceRolls, #history {
     width: min-content;
     margin: 0 auto;
-    background-color: rgba(255,255,255,.8);
+    /* background-color: rgba(255,255,255,.8); */
     padding: 10px;
     border-radius: 20px;
 }

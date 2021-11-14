@@ -29,9 +29,16 @@ function rollEm() {
         console.log("quant " + quant);
         console.log("dice " + dice);
         console.log("mod " + mod);
+        document.getElementById("result").style.backgroundColor = 'rgba(255,255,255,.8)'
+        document.getElementById("result").style.lineHeight = '1.5'
+        document.getElementById("result").style.borderRadius = '25px'
+        document.getElementById("result").style.margin = '0 auto'
+        document.getElementById("history").style.backgroundColor = 'rgba(255,255,255,.8)'
+        document.getElementById("history").style.lineHeight = '1.5'
+        document.getElementById("history").style.borderRadius = '25px'
         document.getElementById("result").append("TOTAL: " + parseInt(rollTotal + mod));
         document.getElementById("historyTitle").innerHTML = "<hr><strong><u>Roll History:</u></strong>";
         document.getElementById("history").prepend("Roll#" + historyVar + ":" + parseInt(rollTotal + mod) + "\n");
         historyVar++
     }
-} 
+}
